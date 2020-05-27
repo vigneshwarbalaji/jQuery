@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("p").click(function() {
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#flow").click(function() {
+                $("#para").hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#show").click(function() {
+                $("#para").show();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $("#disappear").hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("td").css("color", "white");
+            $("tr:even").css("background-color", "red");
+            $("tr:odd").css("background-color", "blue");
+        });
+
+        $(document).ready(function() {
+            $("#demo").mouseenter(function() {
+                $("#demo").css("color", "red")
+            });
+
+            $("#demo").mouseleave(function() {
+                $("#demo").css("color", "black")
+            });
+
+            $("body").mousedown(function() {
+                $("body").css("background-color", "green")
+            });
+
+            $("body").mouseup(function() {
+                $("body").css("background-color", "white")
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="para">If you click on me, I will disappear. Click me away! Click me too! Lorem ipsum dolor sit amet consectetur adipisicing elit. alias doloribus dolor atque commodi odit sit id non qui illum hic doloremque, omnis libero repellendus perspiciatis facilis
+        quam esse voluptatibus?</p>
+    <button>click me for a magic</button>
+
+    <div id="disappear">Happy new year ppl
+    </div>
+
+    <button id="click">click me</button>
+    <button id="flow">hide</button>
+    <button id="show">show</button>
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>viki</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>neutral</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>atom</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>electron</td>
+        </tr>
+    </table>
+
+
+    <p id="demo">i am the best</p>
+
+
+
+</body>
+
+</html>
